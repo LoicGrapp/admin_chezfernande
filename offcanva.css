@@ -24,6 +24,7 @@
 .offcanva.active{
     display: flex;
     flex-direction: column;
+    animation: blured 1s;
 }
 
 .offcanva ul{
@@ -35,4 +36,13 @@
 .offcanva li a {
     text-decoration: none;
     color: #4d636f;
+}
+
+@keyframes blured {
+    from {
+        filter: blur(3px);
+    }
+    to {
+        filter: blur(0);
+    }
 }
