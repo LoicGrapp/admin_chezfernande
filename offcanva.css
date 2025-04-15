@@ -1,0 +1,26 @@
+.toggl-offcanva {
+    background-color: aqua;
+    color: white;
+    border: none;
+    align-items: center;
+}
+.offcanva {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.offcanva ul{
+    list-style: none;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.offcanva li a {
+    text-decoration: none;
+    color: #4d636f;
+}
