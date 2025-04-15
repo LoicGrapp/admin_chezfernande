@@ -24,7 +24,7 @@
 .offcanva.active{
     display: flex;
     flex-direction: column;
-    animation: blured 1s;
+    animation: blured 2s, slide-in 1s;
 }
 
 .offcanva ul{
@@ -40,9 +40,18 @@
 
 @keyframes blured {
     from {
-        filter: blur(3px);
+        filter: blur(5px);
     }
     to {
         filter: blur(0);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
     }
 }
