@@ -2,9 +2,16 @@
     background-color: aqua;
     color: white;
     border: none;
-    align-items: center;
+    justify-items: center;
 }
+
+.offcanva-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .offcanva {
+    display: none;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -12,6 +19,11 @@
     background-color: white;
     height: 100vh;
     padding: 1rem 3rem 1rem 3rem;
+}
+
+.offcanva.active{
+    display: flex;
+    flex-direction: column;
 }
 
 .offcanva ul{
